@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableJpaAuditing
-public class EasystoryApplication {
+public class EasystoryApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         SpringApplication.run(EasystoryApplication.class, args);
