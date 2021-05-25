@@ -26,7 +26,7 @@ import java.util.stream.Collectors;
 @Tag(name = "bookmarks", description = "Bookmarks desc")
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "https://easystory-open.web.app")
+@CrossOrigin(origins = "https://easystory-app.herokuapp.com")
 public class BookmarkController {
 
     @Autowired
