@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 @Tag(name = "qualifications", description = "Qualifications API")
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "https://easystory-open.web.app")
+@CrossOrigin(origins = "https://easystory-app.herokuapp.com")
 public class QualificationController {
     @Autowired
     private ModelMapper mapper;
