@@ -49,7 +49,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(WebSecurity web) {
         web.ignoring().antMatchers("/easystory-api-docs/**",
-                "/swagger-ui/**");
+                "/swagger-ui/**","/easystory-app.herokuapp.com/**");
     }
 
     @Override
@@ -57,7 +57,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         httpSecurity.cors().and();
         httpSecurity.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("*/easystory-app.herokuapp.com*").permitAll()
                 .antMatchers("/api/auth/*").permitAll()
                 .antMatchers(HttpMethod.POST,"/api/users/**").permitAll()
                 .antMatchers(HttpMethod.GET,"/api/users/{userId}/bookmarks/**").permitAll()
