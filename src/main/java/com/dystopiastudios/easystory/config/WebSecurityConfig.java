@@ -57,6 +57,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         httpSecurity.cors().and();
         httpSecurity.csrf().disable()
                 .authorizeRequests()
+                .antMatchers("*//easystory-app.herokuapp.com*").permitAll()
                 .antMatchers("/api/auth/*").permitAll()
                 .antMatchers(HttpMethod.POST,"/api/users/**").permitAll()
                 .antMatchers(HttpMethod.GET,"/api/users/{userId}/bookmarks/**").permitAll()
