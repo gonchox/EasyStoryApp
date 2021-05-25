@@ -28,7 +28,7 @@ import java.util.stream.Collectors;
 @Tag(name = "users", description = "Users API")
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "https://easystory-open.web.app")
+@CrossOrigin(origins = "https://easystory-app.herokuapp.com")
 public class UserController {
     @Autowired
     private ModelMapper mapper;
